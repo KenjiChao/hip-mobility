@@ -1,3 +1,6 @@
 *.py
 *.png
 __pycache__/
+src/
+probe/
+mob.html
