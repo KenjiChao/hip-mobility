@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>髖內旋卡住：先分骨頭還是軟組織，再用負重練開</title>
+<meta name="description" content="躺著膝蓋往內倒成 W、屁股被拉起來 — 自測兩分鐘，動作五個，八週驗證">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0f1115; --ink2:#161a21; --ink3:#1c212a; --line:#2a303a;
+  --amber:#E0A144; --amber-l:#f2c778; --rust:#8A4B3C;
+  --tx:#dfe3e8; --tx2:#9aa1aa; --tx3:#6f757d;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--tx);
+  font-family:"Noto Sans TC",-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
+  font-size:17px;line-height:1.85;letter-spacing:.01em;}
+a{color:var(--amber);text-decoration:none;border-bottom:1px solid rgba(224,161,68,.35)}
+a:hover{color:var(--amber-l)}
+b{color:#fff;font-weight:700}
+code{background:var(--ink3);border:1px solid var(--line);border-radius:5px;
+  padding:2px 7px;font-size:14px;color:var(--amber-l);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;}
+.wrap{max-width:860px;margin:0 auto;padding:0 44px;}
+
+/* ---- topbar ---- */
+.topbar{position:sticky;top:0;z-index:60;background:rgba(15,17,21,.94);
+  backdrop-filter:none;border-bottom:1px solid var(--line);}
+.topbar .in{max-width:860px;margin:0 auto;padding:11px 44px;display:flex;
+  align-items:center;gap:14px;overflow-x:auto;white-space:nowrap;
+  scrollbar-width:none;}
+.topbar .in::-webkit-scrollbar{display:none}
+.topbar a{font-family:Oswald,sans-serif;font-size:12.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--tx2);border:0;flex:0 0 auto}
+.topbar a:hover{color:var(--amber)}
+.topbar .brand{color:var(--amber);font-weight:600}
+
+/* ---- hero ---- */
+.hero{padding:64px 0 44px;border-bottom:1px solid var(--line)}
+.kick{font-family:Oswald,sans-serif;font-size:12px;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--amber);margin-bottom:20px}
+h1{font-family:Oswald,sans-serif;font-weight:600;font-size:46px;line-height:1.18;
+  margin:0 0 16px;letter-spacing:.01em;color:#fff}
+.sub{font-family:"Noto Serif TC",serif;font-style:italic;font-size:19px;
+  color:var(--tx2);line-height:1.7;margin-bottom:28px}
+.lead{font-size:17.5px;border-left:3px solid var(--amber);padding-left:20px;color:#cdd3da}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);
+  border:1px solid var(--line);margin:38px 0 8px}
+.stats div{background:var(--ink2);padding:18px 16px}
+.stats .v{font-family:Oswald,sans-serif;font-size:27px;color:var(--amber);line-height:1.15}
+.stats .k{font-size:12.5px;color:var(--tx2);line-height:1.55;margin-top:7px}
+
+/* ---- sections ---- */
+section{border-bottom:1px solid var(--line);padding:56px 0}
+.tag{display:inline-block;font-family:Oswald,sans-serif;font-size:11px;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--amber);border:1px solid rgba(224,161,68,.45);
+  padding:4px 11px;border-radius:2px;margin-bottom:16px}
+h2{font-family:Oswald,sans-serif;font-weight:600;font-size:30px;line-height:1.3;
+  margin:0 0 22px;color:#fff;display:flex;align-items:baseline;gap:16px}
+h2 .num{font-family:Oswald,sans-serif;font-size:42px;color:transparent;
+  -webkit-text-stroke:1px #39414d;flex:0 0 auto;line-height:1}
+h3{font-family:Oswald,sans-serif;font-size:20px;color:var(--amber-l);margin:34px 0 12px;font-weight:500}
+p{margin:0 0 16px}
+
+/* ---- figure ---- */
+figure{margin:26px 0;background:var(--ink2);border:1px solid var(--line);padding:14px 14px 4px}
+figure svg{display:block;width:100%;height:auto}
+figcaption{font-size:13.5px;color:var(--tx2);padding:10px 4px 12px;line-height:1.65;
+  border-top:1px solid var(--line);margin-top:8px}
+
+/* ---- real-person demo clip ---- */
+figure.demo{padding:0;overflow:hidden}
+figure.demo video{display:block;width:100%;height:auto;background:#000;
+  border-bottom:1px solid var(--line)}
+figure.demo figcaption{border-top:0;padding:13px 16px 4px;color:#cdd3da;font-size:14.5px}
+figure.demo .cred{font-size:11.5px;color:var(--tx3);padding:0 16px 13px;letter-spacing:.01em}
+figure.demo .cred a{color:var(--tx3);text-decoration:underline;text-underline-offset:2px}
+figure.demo .cred a:hover{color:var(--amber)}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:26px 0}
+.duo figure{margin:0}
+
+/* ---- callout / test / epistemic ---- */
+.callout{background:var(--ink3);border-left:3px solid var(--amber);padding:20px 22px;margin:28px 0}
+.callout .t{font-family:Oswald,sans-serif;font-size:17px;color:var(--amber);margin-bottom:9px;letter-spacing:.02em}
+.callout p{margin:0;font-size:16px;color:#cdd3da}
+
+.test{border:1px solid rgba(224,161,68,.4);background:var(--ink2);padding:22px 24px;margin:28px 0}
+.test .t{font-family:Oswald,sans-serif;font-size:18px;color:var(--amber);margin-bottom:14px}
+.test ol{margin:0;padding-left:22px}
+.test li{margin-bottom:11px;color:#cdd3da}
+.test .note{font-size:13.5px;color:var(--tx3);margin-top:14px;padding-top:13px;border-top:1px solid var(--line)}
+
+.epi{margin:26px 0;border-top:1px solid var(--line)}
+.epi .row{display:grid;grid-template-columns:190px 1fr;gap:18px;padding:14px 0;border-bottom:1px solid var(--line)}
+.epi .lab{font-size:12px;font-family:Oswald,sans-serif;letter-spacing:.1em;color:var(--amber);text-transform:uppercase}
+.epi .val{font-size:15.5px;color:#cdd3da}
+
+/* ---- table ---- */
+table{width:100%;border-collapse:collapse;margin:26px 0;font-size:15px}
+th{font-family:Oswald,sans-serif;font-weight:500;font-size:12px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--amber);text-align:left;padding:11px 14px;
+  border-bottom:1px solid var(--line);background:var(--ink2)}
+td{padding:14px;border-bottom:1px solid var(--line);vertical-align:top;color:#cdd3da;line-height:1.7}
+tbody tr:hover{background:var(--ink2)}
+
+/* ---- phases ---- */
+.phase{border:1px solid var(--line);background:var(--ink2);margin:20px 0;padding:0}
+.phase .hd{display:flex;align-items:baseline;gap:14px;padding:16px 20px;
+  border-bottom:1px solid var(--line);background:var(--ink3);flex-wrap:wrap}
+.phase .n{font-family:Oswald,sans-serif;font-size:19px;color:var(--amber)}
+.phase .wk{font-size:13px;color:var(--tx2);letter-spacing:.05em}
+.phase .goal{font-size:14.5px;color:#cdd3da;width:100%;margin-top:2px}
+.phase ul{list-style:none;margin:0;padding:6px 0}
+.phase li{display:flex;justify-content:space-between;gap:16px;padding:12px 20px;
+  border-bottom:1px solid rgba(42,48,58,.6);font-size:15.5px;align-items:baseline}
+.phase li:last-child{border-bottom:0}
+.phase li .d{color:var(--amber-l);font-size:13.5px;flex:0 0 auto;text-align:right}
+
+/* ---- exercise cards ---- */
+.ex{border:1px solid var(--line);background:var(--ink2);margin:26px 0;padding:24px}
+.ex .hd{display:flex;align-items:center;gap:13px;margin-bottom:4px;flex-wrap:wrap}
+.ex .badge{width:31px;height:31px;border-radius:50%;background:var(--amber);color:#0f1115;
+  font-family:Oswald,sans-serif;font-size:15px;display:flex;align-items:center;
+  justify-content:center;flex:0 0 auto;font-weight:600}
+.ex .nm{font-family:Oswald,sans-serif;font-size:21px;color:#fff}
+.ex .en{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--tx3)}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 4px}
+.pills span{background:var(--ink3);border:1px solid rgba(224,161,68,.35);color:var(--amber-l);
+  font-size:12.5px;padding:5px 12px;border-radius:2px;letter-spacing:.03em}
+.ex ul{margin:14px 0 0;padding-left:20px}
+.ex li{margin-bottom:9px;color:#cdd3da;font-size:15.5px}
+.err{margin-top:14px;padding:11px 14px;background:rgba(138,75,60,.14);
+  border-left:3px solid var(--rust);font-size:14.5px;color:#d9bdb4}
+.err b{color:#e0a89b}
+.vbtn{display:inline-block;margin-top:15px;font-family:Oswald,sans-serif;font-size:12.5px;
+  letter-spacing:.13em;text-transform:uppercase;border:1px solid rgba(224,161,68,.5);
+  padding:8px 15px;color:var(--amber);border-bottom:1px solid rgba(224,161,68,.5)}
+.vbtn:hover{background:rgba(224,161,68,.1)}
+
+/* ---- video list ---- */
+.vg{margin:26px 0}
+.vg .gt{font-family:Oswald,sans-serif;font-size:14px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--amber);border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:14px}
+.vg .item{margin-bottom:18px}
+.vg .item .ti{font-size:16px;color:#fff;font-weight:600}
+.vg .item .wy{font-size:14.5px;color:var(--tx2);margin-top:4px;line-height:1.7}
+
+/* ---- dont list ---- */
+.dont{border:1px solid rgba(138,75,60,.5);background:rgba(138,75,60,.08);padding:20px 24px;margin:26px 0}
+.dont ul{margin:0;padding-left:20px}
+.dont li{margin-bottom:10px;color:#d9c6c0;font-size:15.5px}
+.dont li:last-child{margin-bottom:0}
+
+/* ---- sources ---- */
+.srcs{columns:2;column-gap:34px;font-size:13.5px;line-height:1.7}
+.srcs div{break-inside:avoid;margin-bottom:16px;color:var(--tx2)}
+.srcs a{word-break:break-all;font-size:12.5px}
+footer{padding:46px 0 70px;color:var(--tx3);font-size:13.5px}
+
+@media(max-width:760px){
+  body{font-size:16.5px;line-height:1.82}
+  .wrap{padding:0 18px}
+  .topbar .in{padding:10px 18px;gap:12px}
+  .hero{padding:38px 0 30px}
+  h1{font-size:29px;line-height:1.28}
+  .sub{font-size:16px}
+  .lead{font-size:16px;padding-left:14px}
+  .stats{grid-template-columns:1fr 1fr}
+  .stats .v{font-size:23px}
+  section{padding:40px 0}
+  h2{font-size:22px;gap:10px;flex-wrap:wrap}
+  h2 .num{font-size:29px}
+  h3{font-size:18px}
+  figure{padding:10px 10px 2px}
+  figure.demo{padding:0}
+  .duo{grid-template-columns:1fr;gap:16px}
+  .callout,.test,.dont{padding:16px 17px}
+  .epi .row{grid-template-columns:1fr;gap:5px;padding:12px 0}
+  .ex{padding:18px 16px}
+  .ex .nm{font-size:19px}
+  .phase li{flex-direction:column;gap:4px;padding:11px 16px}
+  .phase li .d{text-align:left}
+  .phase .hd{padding:14px 16px}
+  .srcs{columns:1}
+
+  table,thead,tbody,tr,th,td{display:block;width:100%}
+  thead{display:none}
+  tbody tr{background:var(--ink2);border:1px solid var(--line);margin-bottom:14px;padding:4px 0}
+  tbody tr:hover{background:var(--ink2)}
+  tbody td{border-bottom:1px solid var(--line);padding:12px 16px}
+  tbody td:last-child{border-bottom:none}
+  tbody td::before{content:attr(data-l);display:block;font-size:10.5px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--amber);font-weight:700;margin-bottom:5px}
+}
+.stats .v{font-size:22px}@media(max-width:760px){.stats .v{font-size:19px}}</style>
+</head><body>
+<div class="topbar"><div class="in"><span class="brand">HIP IR</span><a href="#why">原理</a><a href="#test">自測</a><a href="#ex">動作</a><a href="#plan">排程</a><a href="#src">來源</a><a href="./">90/90 總篇</a></div></div>
+<div class="hero"><div class="wrap">
+  <div class="kick">髖關節內旋 · 自測 + 五個動作 · 真人示範</div>
+  <h1>髖內旋卡住：先分骨頭還是軟組織，再用負重練開</h1>
+  <div class="sub">躺著膝蓋往內倒成 W、屁股被拉起來 — 自測兩分鐘，動作五個，八週驗證</div>
+  <div class="lead">每個動作上方都是真人示範的循環短片，不用點出去。先做第 2 節的自測記下角度，再照第 4 節排八週。</div>
+  <div class="stats"><div><div class="v">7°</div><div class="k">旋轉角度的最小可偵測變化；小於它都是量測誤差</div></div><div><div class="v">21° vs 28°</div><div class="k">有／無髖鼠蹊傷史的球員，躺姿內旋角度</div></div><div><div class="v">0.86 vs 0.29</div><div class="k">離心訓練 vs 靜態伸展，對活動度的效果量</div></div><div><div class="v">8 週</div><div class="k">離心訓練效果的高峰區間（6–8 週）</div></div></div>
+</div></div>
+<section id="why"><div class="wrap"><div class="tag">原理</div><h2><span class="num">01</span><span>為什麼你做不出 W</span></h2>
+<p>W 是<b>兩邊髖同時內旋</b>，而且腳張得越開，要求的角度越大。小孩坐得出 W，是因為他們的股骨天生往前扭得比較多（股骨前傾角，出生約 30–40°），
+<b>到青春期會降到成人的 10–15°</b>，內旋角度跟著變少。所以成年男性做不到 W 很常見，這是確定的解剖學。</p>
+<p>屁股被拉起來，是髖已經轉到底，骨盆只好跟著動來借角度——代表你的內旋確實到頂了，這個訊號是準的。</p>
+<div class="callout"><div class="t">目標換掉</div><p>不要把「做出 W」當目標，改成<b>在同樣條件下量到的內旋角度增加 ≥7°</b>。W 同時混進兩邊、腳距、骨盆代償，拿它追進度會量不準。</p></div>
+</div></section><section id="test"><div class="wrap"><div class="tag">自測</div><h2><span class="num">02</span><span>先分：骨頭還是軟組織</span></h2>
+<p>內旋卡住有兩種來源：<b>軟組織</b>（後側關節囊、深層外旋肌、臀大肌）練得開；<b>骨頭形狀</b>（股骨後傾、股骨頸多一塊骨頭的 cam 型夾擠）練不開。
+用兩個姿勢量，一次分辨，也同時當作八週後的基準。手機下載量角器 app，量<b>小腿偏離垂直線的角度</b>，左右各量、各記一次。</p>
+<h3>A. 趴姿（髖伸直）</h3>
+<figure class="demo"><video src="clips/prone_meas.mp4" poster="clips/prone_meas.jpg" autoplay muted loop playsinline preload="none" disablepictureinpicture></video><figcaption>趴姿內旋量測：膝蓋彎 90°，小腿往外倒到骨盆開始要翹起來就停，量小腿偏離垂直線的角度。片段裡是治療師幫忙擺，自己量就讓小腿靠重力倒下去、請家人拿手機量。</figcaption><div class="cred">示範片段：<a href="https://www.youtube.com/watch?v=Lg8s9UHVum4" target="_blank" rel="noopener">Meloq — Measuring Internal Hip Rotation in Prone</a> · 0:24</div></figure>
+<h3>B. 坐姿（髖屈曲 90°）</h3>
+<figure class="demo"><video src="clips/seated_ir.mp4" poster="clips/seated_ir.jpg" autoplay muted loop playsinline preload="none" disablepictureinpicture></video><figcaption>坐姿內旋量測：坐高椅、大腿平放不動，小腿往外擺到骨盆要翹起就停，量小腿的角度。片段示範的是主動動作，量測就是停在最底那一刻。</figcaption><div class="cred">示範片段：<a href="https://www.youtube.com/watch?v=fPaF3oro6hE" target="_blank" rel="noopener">E3 Rehab — How To Improve Your Hip Range of Motion</a> · 11:17</div></figure>
+<table><thead><tr><th>你感覺到的</th><th>比較像</th><th>怎麼辦</th></tr></thead><tbody>
+<tr><td data-l="你感覺到的">屁股外側／深處被拉緊，停下來的點是軟的</td><td data-l="比較像">軟組織</td><td data-l="怎麼辦">照下面五個動作練，預期會進步</td></tr>
+<tr><td data-l="你感覺到的">兩個姿勢都卡，像撞到硬牆，沒什麼拉的感覺</td><td data-l="比較像">骨頭形狀（股骨後傾）</td><td data-l="怎麼辦">一樣可以練，但進步空間小；重點放在範圍內的力量</td></tr>
+<tr><td data-l="你感覺到的">坐姿時鼠蹊部<b>前側夾住痛</b></td><td data-l="比較像">可能是 cam 夾擠</td><td data-l="怎麼辦">不要往痛的地方硬壓；只在不痛的範圍練</td></tr>
+</tbody></table>
+<div class="epi">
+<div class="row"><div class="lab">參考值</div><div class="val">男性足球員：躺姿約 28°，趴姿約 38°±8°。有過髖／鼠蹊傷的球員躺姿約 21°。</div></div>
+<div class="row"><div class="lab">量測誤差</div><div class="val">左右差或前後差 <b>小於 7° 都當作雜訊</b>。每次同條件量：沒熱身、同一時段、同一個人拿手機。</div></div>
+<div class="row"><div class="lab">證據等級</div><div class="val">上表的分辨方式是臨床推理，不是經過驗證的診斷工具；真要確定骨頭形狀要照影像。</div></div>
+</div>
+</div></section><section id="ex"><div class="wrap"><div class="tag">動作</div><h2><span class="num">03</span><span>五個動作（照證據強度排）</span></h2>
+<p>對活動度的效果：<b>離心訓練 0.86 > 負重肌力訓練 0.49 > 靜態伸展 0.29</b>，而且<b>只用自體重的動作沒有顯著效果</b>。
+所以 1、2 是主菜，要加阻力；3 是入門時先把範圍打開；4 把內旋帶到站姿；5 是可選的配菜。</p>
+<div class="ex"><div class="hd"><span class="badge">1</span><span class="nm">坐姿彈力帶內旋</span><span class="en">Seated banded hip IR</span></div><figure class="demo"><video src="clips/band_ir.mp4" poster="clips/band_ir.jpg" autoplay muted loop playsinline preload="none" disablepictureinpicture></video><figcaption>坐姿彈力帶內旋：迷你彈力帶套兩腳踝，膝蓋夾一塊瑜珈磚或捲起的毛巾固定大腿，兩隻小腿往外推開，再慢慢收回。</figcaption><div class="cred">示範片段：<a href="https://www.youtube.com/watch?v=PzWue7bprsE" target="_blank" rel="noopener">Adam Son — Mini Band Seated Hip Internal Rotation</a> · 0:03</div></figure><div class="pills"><span>3 組 × 10–15 下</span><span>收回數 3–4 秒</span><span>一週 3 次</span><span>阻力逐步加大</span></div><ul><li>迷你彈力帶套兩腳踝；膝蓋夾瑜珈磚／捲毛巾，讓大腿固定不動。</li><li>兩隻小腿往外推開＝兩邊髖同時內旋。推到底停 1 秒。</li><li><b>收回比推出重要</b>：對抗彈力帶慢慢放回，這一段就是離心。</li><li>推到底越來越輕鬆就換更硬的帶子——沒有加負重，活動度不會往上走。</li></ul><div class="err"><b>錯誤：</b>身體往後仰、屁股在椅子上左右扭，用骨盆去借角度。上身挺直、坐骨壓住椅面。</div></div><div class="ex"><div class="hd"><span class="badge">2</span><span class="nm">90/90 後腳抬離</span><span class="en">90/90 back-foot lift-off</span></div><figure class="demo"><video src="clips/liftoff2.mp4" poster="clips/liftoff2.jpg" autoplay muted loop playsinline preload="none" disablepictureinpicture></video><figcaption>內旋方向：後腳腳掌抬離地面。膝蓋壓住不翹。</figcaption><div class="cred">示範片段：<a href="https://www.youtube.com/watch?v=fPaF3oro6hE" target="_blank" rel="noopener">E3 Rehab — How To Improve Your Hip Range of Motion</a> · 7:29</div></figure><div class="pills"><span>每側 3 組 × 5–8 下</span><span>抬起停 2–3 秒</span></div><ul><li>坐成 90/90，<b>要練內旋的那一側放在後腳</b>。</li><li>上身挺直、胸口朝前，把後腳腳掌／小腿抬離地面，停住，再慢慢放下。</li><li>抬不起來是正常的：改成「用力往上頂但不離地」10 秒，一樣有效，就是從等長開始。</li></ul><div class="err"><b>錯誤：</b>身體往前腳那側倒、或後腳膝蓋翹起來。膝蓋壓在地上，只動小腿。</div></div><div class="ex"><div class="hd"><span class="badge">3</span><span class="nm">末端等長收縮</span><span class="en">End-range isometric (block press)</span></div><figure class="demo"><video src="clips/block_iso.mp4" poster="clips/block_iso.jpg" autoplay muted loop playsinline preload="none" disablepictureinpicture></video><figcaption>把卡住那側放在後腳位置，膝／小腿內側壓住瑜珈磚 5–10 秒。</figcaption><div class="cred">示範片段：<a href="https://www.youtube.com/watch?v=W9zRnULxgq8" target="_blank" rel="noopener">Christina Nicci — One-Sided Hip IR Drill</a> · 0:20</div></figure><div class="pills"><span>每側 5 下</span><span>每下用力 5–10 秒</span><span>只做卡住的那一側</span></div><ul><li>先轉到內旋最底的位置，停在那裡再出力，不用再往下壓。</li><li>膝蓋／小腿內側壓瑜珈磚，約 5 成力，撐 5–10 秒。</li><li>放鬆後常常能再多轉一點點，<b>這是暫時打開的，要接動作 1、2、4 才留得住</b>。</li><li>證據等級：實務界常用，研究支持比離心訓練弱。當入門用，不當主菜。</li></ul><div class="err"><b>錯誤：</b>用力到憋氣、身體跟著轉。5 成力就好，呼吸不停。</div></div><div class="ex"><div class="hd"><span class="badge">4</span><span class="nm">髖飛機</span><span class="en">Hip airplane</span></div><figure class="demo"><video src="clips/airplane.mp4" poster="clips/airplane.jpg" autoplay muted loop playsinline preload="none" disablepictureinpicture></video><figcaption>Hip airplane：單腳站身體前傾成一直線，骨盆打開再關起來。</figcaption><div class="cred">示範片段：<a href="https://www.youtube.com/watch?v=zNGpdD6ig4U" target="_blank" rel="noopener">Squat University — Hip Airplane</a> · 6:06</div></figure><div class="pills"><span>每側 2–3 組 × 5 下</span><span>慢，一下約 4 秒</span><span>可以扶牆</span></div><ul><li>單腳站，身體前傾到和後腳約成一直線。</li><li>骨盆往站立腳那側「關起來」＝站立腳的髖內旋；再打開＝外旋。</li><li>這是五個動作裡唯一帶著體重做內旋的，最接近踢球、急停變向時的髖。</li></ul><div class="err"><b>錯誤：</b>轉的是肩膀和腰，不是骨盆。把雙手插腰，看手有沒有跟著骨盆轉。</div></div><div class="ex"><div class="hd"><span class="badge">5</span><span class="nm">趴姿內旋伸展</span><span class="en">Prone hip IR stretch</span></div><figure class="demo"><video src="clips/prone_str.mp4" poster="clips/prone_str.jpg" autoplay muted loop playsinline preload="none" disablepictureinpicture></video><figcaption>趴姿內旋伸展：兩腳膝蓋彎 90°，腳掌往兩邊倒開。片段是有人輔助；自己做就讓重力帶，骨盆壓住床面不離開。</figcaption><div class="cred">示範片段：<a href="https://www.youtube.com/watch?v=78jdt_GphQY" target="_blank" rel="noopener">webpttoday — Hip Prone Internal Rotation Stretching</a> · 0:26</div></figure><div class="pills"><span>30–60 秒 × 2–3 次</span><span>練完或睡前</span><span>可選的配菜</span></div><ul><li>趴著，兩腳膝蓋彎 90°，讓小腿靠重力往兩邊倒開。</li><li>骨盆壓住床面不能翹；感覺在屁股外側／深層被拉，不是在膝蓋。</li><li>效果量只有 0.29，是五個裡面最弱的。<b>不要只做這個</b>。</li></ul><div class="err"><b>錯誤：</b>膝蓋內側痛：代表力量跑到膝蓋。把兩膝距離拉開一點，或小腿不要倒那麼低。</div></div></div></section><section id="plan"><div class="wrap"><div class="tag">排程</div><h2><span class="num">04</span><span>一週怎麼排、八週怎麼驗</span></h2>
+<div class="phase"><div class="hd"><span class="n">每次約 15 分鐘</span><span class="wk">一週 3–4 次，可以接在重訓或踢球後</span></div><ul>
+<li><span>3 · 末端等長（只做卡住側）</span><span class="d">每側 5 × 5–10 秒</span></li>
+<li><span>1 · 坐姿彈力帶內旋</span><span class="d">3 × 10–15，收回 3–4 秒</span></li>
+<li><span>2 · 90/90 後腳抬離</span><span class="d">每側 3 × 5–8</span></li>
+<li><span>4 · 髖飛機</span><span class="d">每側 2–3 × 5</span></li>
+<li><span>5 · 趴姿伸展（可選）</span><span class="d">30–60 秒 × 2–3</span></li>
+</ul></div>
+<div class="callout"><div class="t">練完當下變鬆 ≠ 進步</div><p>練完角度立刻變大，多半是組織變熱，隔天就退回去了。<b>要看的是八週後、沒熱身時量的數字。</b></p></div>
+<div class="test"><div class="t">八週驗證</div><ol>
+<li>今天用第 2 節的趴姿、坐姿量，左右各記一次。</li>
+<li>八週後同條件再量。</li>
+<li><b>進步 ≥7°</b>：有效，繼續加阻力。</li>
+<li>照劑量練滿八週仍 <b>&lt;7°</b>：多半是骨頭形狀的上限，別再硬磨，改找運動物理治療師或照 X 光。</li>
+</ol><div class="note">6–8 週是離心訓練效果的高峰區間（g=0.98）。</div></div>
+<div class="dont"><ul>
+<li><b>直接就醫、不要自己練：</b>鼠蹊部夾痛、髖卡住（lock）或彈響、夜間痛。</li>
+<li>練的時候痛超過 2／10 就退一步：縮小範圍或減輕阻力。</li>
+</ul></div>
+</div></section><section id="src"><div class="wrap"><div class="tag">來源</div><h2><span class="num">05</span><span>資料來源</span></h2><div class="srcs"><div>離心／阻力／伸展對 ROM 效果量與劑量（統合分析）<br><a href="https://doi.org/10.1249/mss.0000000000003085" target="_blank" rel="noopener">https://doi.org/10.1249/mss.0000000000003085</a></div><div>阻力訓練改善 ROM；自體重組無顯著效果<br><a href="https://link.springer.com/article/10.1007/s40279-022-01804-x" target="_blank" rel="noopener">https://link.springer.com/article/10.1007/s40279-022-01804-x</a></div><div>有／無髖鼠蹊傷史球員的內旋與總旋轉角度（Tak 等）<br><a href="https://journals.sagepub.com/doi/abs/10.1177/0363546515617747" target="_blank" rel="noopener">https://journals.sagepub.com/doi/abs/10.1177/0363546515617747</a></div><div>髖旋轉量測誤差 SEM 與 MDC 7°<br><a href="https://www.sciencedirect.com/science/article/pii/S1466853X24000671" target="_blank" rel="noopener">https://www.sciencedirect.com/science/article/pii/S1466853X24000671</a></div><div>cam 型態與旋轉角度、症狀的關係<br><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11529365/" target="_blank" rel="noopener">https://pmc.ncbi.nlm.nih.gov/articles/PMC11529365/</a></div><div>訓練後當下 ROM 增加會回退（暖身 ≠ 適應）<br><a href="https://www.mdpi.com/1648-9144/56/5/228" target="_blank" rel="noopener">https://www.mdpi.com/1648-9144/56/5/228</a></div><div>股骨前傾角：出生 30–40°，成人約 15°（Orthobullets）<br><a href="https://www.orthobullets.com/pediatrics/4059/femoral-anteversion" target="_blank" rel="noopener">https://www.orthobullets.com/pediatrics/4059/femoral-anteversion</a></div><div>股骨前傾角隨年齡下降（Johns Hopkins）<br><a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/femoral-anteversion" target="_blank" rel="noopener">https://www.hopkinsmedicine.org/health/conditions-and-diseases/femoral-anteversion</a></div><div>E3 Rehab：髖活動度的「拉到末端＋在末端練力量」框架<br><a href="https://e3rehab.com/how-to-improve-your-hip-range-of-motion/" target="_blank" rel="noopener">https://e3rehab.com/how-to-improve-your-hip-range-of-motion/</a></div></div></div></section>
+<footer><div class="wrap">示範片段節錄自公開教學影片，每段下方附原始頻道與連結。本頁整理自公開研究與衛教資料，不構成醫療診斷。</div></footer>
+</body></html>
